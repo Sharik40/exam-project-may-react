@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import React from "react";
+import Menu from "@/app/components/menu/Menu";
 
 
 
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+      <Menu/>
         {children}
       </body>
     </html>
