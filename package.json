@@ -25,6 +25,7 @@
     "eslint": "^8",
     "eslint-config-next": "15.0.3",
     "@mui/material": "^6.1.8",
-    "@heroicons/react": "^2.2.0"
+    "@heroicons/react": "^2.2.0",
+    "react-router-dom": "^7.0.1"
   }
 }

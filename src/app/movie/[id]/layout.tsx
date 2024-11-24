@@ -2,13 +2,13 @@ import React from 'react';
 import {Metadata} from "next";
 
 export const metadata: Metadata = {
-    title: 'GenreLayout metadata',
-    description: 'GenreLayout metadata',
+    title: 'Movie metadata',
+    description: 'Movie metadata',
 }
 
 type Props = { children: React.ReactNode }
 
-const GenreLayout = ({children}: Props) => {
+const Movie = ({children}: Props) => {
     return (
         <>
             {children}
@@ -16,4 +16,4 @@ const GenreLayout = ({children}: Props) => {
     );
 };
 
-export default GenreLayout;
+export default Movie;

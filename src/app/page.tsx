@@ -71,6 +71,7 @@ const Home = () => {
         return (
 
             <div className="movies-page">
+                <h1>Popular</h1>
                 <Pagination
                     count={200}
                     page={currentPage}
