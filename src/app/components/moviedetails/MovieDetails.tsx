@@ -1,20 +1,17 @@
 'use client'
 
 import React from 'react';
-import {useRouter} from "next/router";
+import {MoviesListResult} from "@/app/page";
 
-const MovieDetails = () => {
 
-    const router = useRouter();
-    const { query } = router;
+const MovieDetails = ({ movie }: { movie: MoviesListResult }) => {
+
+
+    console.log(movie)
 
     return (
         <div className="movie-details-page">
-            <h1>{query.title}</h1>
-            <img src={`https://image.tmdb.org/t/p/w500${query.poster_path}`} alt='qwf'/>
-            <p>{query.overview}</p>
-            <p>Release Date: {query.release_date}</p>
-            <p>Rating: {query.vote_average}</p>
+            <h1>Hello</h1>
         </div>
     );
 };

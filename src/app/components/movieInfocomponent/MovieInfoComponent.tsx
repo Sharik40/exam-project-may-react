@@ -2,20 +2,16 @@
 
 import React from 'react';
 import {MoviesListResult} from "@/app/page";
-import {useRouter} from "next/router";
+import {useRouter } from "next/navigation";
 
 
 const MovieInfoComponent = ({movie} :{movie: MoviesListResult}) => {
     const imageUrl = `https://image.tmdb.org/t/p/w500`;
-
     const router = useRouter();
 
+
     const handleClick = () => {
-        router.push({
-            pathname: `/movie/${movie.id}`,
-            query: { ...movie },
-        }).catch(e => {
-            console.log(e)});
+        router.push(`/movie/${movie.id}`);
     };
 
     return (
